@@ -1,0 +1,384 @@
+header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    z-index: 5;
+    margin: auto;
+}
+
+
+
+.supercadre {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 1440px;
+    background: #FFFFFF;
+    z-index: 5;
+    margin: auto;
+}
+
+
+.imagedefond {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 956.14px;
+    top: -98px;
+}
+
+.icone {
+    position: absolute;
+    display: flex;
+    margin-left: 620px;
+    margin-top: -48px;
+
+}
+
+.cadre {
+    position: relative;
+    bottom: 1800px;
+    width: 1055px;
+    height: 1600px;
+    margin: auto;
+    background: #F7F7F7;
+    border-radius: 50px;
+    z-index: 8;
+}
+
+.minicadre {
+    display: flex;
+    height: 68.0689697265625px;
+    width: 634px;
+    top: 39px;
+    margin-bottom: 40px;
+    border-radius: 15.043103218078613px;
+    padding: 12px 5px 12px 20px;
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001A;
+    margin-left: 200px;
+    background: #FFFFFF;
+}
+
+.ok2 {
+    position: relative;
+    top: -90px;
+    color: #FFFFFF;
+    z-index: 11;
+}
+
+.ok1 {
+    position: relative;
+    margin-left: 554px;
+    border-radius: 0px 15px 15px 0px;
+    background: none;
+    padding: 39px;
+    top: -90px;
+    opacity: 0;
+    color: #FFFFFF;
+    transition: opacity 0.3s;
+}
+
+.ok1:hover {
+    opacity: 1;
+    background: #99E2D0;
+}
+
+
+footer {
+    z-index: 6;
+    bottom: 1800px;
+    position: relative;
+    height: 114px;
+    width: 100%;
+    background: #353535;
+}
+
+.footerline {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.orderfooter {
+    display: flex;
+    flex-direction: row;
+    margin-left: 665px;
+    margin-right: 50px;
+    font-family: 'Roboto';
+    text-align: left;
+    color: #FFFFFF;
+    justify-content: space-between;
+}
+
+.iconefooter {
+    display: flex;
+    margin-top: 15px;
+}
+
+.omf {
+    display: flex;
+    margin-top: 12px;
+}
+
+
+
+
+.ohmyfood {
+    position: relative;
+    display: flex;
+    font-weight: 400;
+    margin: auto;
+}
+
+.lapalettedegout {
+    display: flex;
+    margin-left: 400px;
+    height: 41px;
+    width: 261px;
+    font-family: 'Shrikhand';
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 41px; 
+}
+
+
+.titre {
+    height: 27px;
+    width: 275px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: left;
+    margin-left: 200px;
+    text-decoration: underline;
+}
+
+.description {
+    margin-top: -16px;
+    height: 44px;
+    width: 274.787353515625px;
+}
+
+.prix {
+    position: relative;
+    display: flex;
+    margin-left: 300px;
+}
+
+.prix:hover {
+    margin-left: 250px;
+}
+
+.textinbutton {
+    height: 24px;
+    width: 154px;
+    left: 16px;
+    top: 13px;
+    font-family: 'Roboto';
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.proposerestoetc {
+    height: 19px;
+    width: 168px;
+    left: 22px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.omyfood2 {
+    font-family: 'Shrikhand';
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    height: 27px;
+    width: 137.58163452148438px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1080px){
+    .footer {
+        width: 100%;
+    }
+
+    .cadre {
+        right: 75px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        height: 63px;
+        width: 375px;
+    }
+
+    .ohmyfood {
+        height: 44px;
+        width: 162px;
+        margin-left: 85px;
+    }
+
+    .imagedefond {
+        height: 275px;
+        width: 375px;
+        top: 63px;
+    }
+
+    .supercadre {
+        display: none;
+    }
+
+    .cadre {
+        height: 1407px;
+        width: 360px;
+        top: 3px;
+        right: 45px;
+    }
+
+    .minicadre {
+        height: 50px;
+        width: 300px;
+        top: 39px;
+        border-radius: 15.043103218078613px;
+        margin-left: 11px;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        height: 40px;
+        width: 274.787353515625px;
+    }
+
+    .ok1 {
+        position: relative;
+        margin-left: 554px;
+        border-radius: 0px 15px 15px 0px;
+        background: none;
+        padding: 39px;
+        top: -90px;
+        z-index: 11;
+        opacity: 0;
+        color: #FFFFFF;
+    }
+    
+    .ok1:hover {
+        opacity: 1;
+        background: #99E2D0;
+    }
+    
+
+    .titremenu {
+        height: 21px;
+        width: 287px;
+        top: -1.5px;
+    }
+
+    .soustitre {
+        margin-top: -10px;
+    }
+
+    .prix {
+        right: 300px;
+    }
+
+    .bouton {
+        position: relative;
+        height: 50px;
+        width: 186px;
+        margin-left: 100px;
+        top: 50px;
+        border-radius: 25px;
+        background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+        padding: 30px;
+    }
+
+    footer {
+        height: 300px;
+        width: 375px;
+        background: #353535;
+        top: 2.5px;
+    }
+
+    .orderfooter {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        font-family: 'Roboto';
+        text-align: left;
+        justify-content: space-between;
+    }
+
+
+
+    .ohmyfood {
+        height: 44px;
+        width: 162px;
+        left: 16px;
+    }
+
+    .lapalettedegout {
+        display: flex;
+        margin-left: 70px;
+        height: 41px;
+        width: 261px;
+        font-family: 'Shrikhand';
+        font-size: 28px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 41px; 
+    }
+
+    .icone {
+        margin-left: 280px;
+    }
+
+    .titre {
+        display: flex;
+        height: 27px;
+        width: 720px;
+        font-family: 'Roboto';
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+
+
+    .textinbutton {
+        height: 24px;
+        width: 154px;
+        left: 16px;
+        top: 13px;
+    }
+}
