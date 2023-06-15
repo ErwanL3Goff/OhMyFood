@@ -50,39 +50,64 @@ header {
 
 .minicadre {
     display: flex;
-    height: 68.0689697265625px;
+    height: 90px;
     width: 634px;
     top: 39px;
     margin-bottom: 40px;
     border-radius: 15.043103218078613px;
-    padding: 12px 5px 12px 20px;
     box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px #0000001A;
     margin-left: 200px;
     background: #FFFFFF;
 }
 
-.ok2 {
-    position: relative;
-    top: -90px;
-    color: #FFFFFF;
-    z-index: 11;
+
+
+
+
+
+
+
+
+.minicadre:hover .carte__plats__infos__checkbox {
+    width: 88px;
 }
 
-.ok1 {
+.carte__plats__infos__checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #99e2d0;
+    width: 0%;
     position: relative;
-    margin-left: 554px;
-    border-radius: 0px 15px 15px 0px;
-    background: none;
-    padding: 39px;
-    top: -90px;
+    overflow: hidden;
+    height: 100%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.carte__plats__infos__checkbox input {
+    z-index: 1;
+    position: absolute;
     opacity: 0;
-    color: #FFFFFF;
-    transition: opacity 0.3s;
 }
 
-.ok1:hover {
-    opacity: 1;
-    background: #99E2D0;
+.carte__plats__infos__checkbox .fa-check {
+    border-radius: 50px;
+    background-color: #ffffff;
+    display: flex;
+    padding: 6px;
+    color: #99e2d0;
+}
+
+.fa-solid {
+    color: #FFFFFF;
+}
+
+
+.prix {
+    left: 45px;
+    margin-top: 25px;
 }
 
 
@@ -165,11 +190,7 @@ footer {
     width: 274.787353515625px;
 }
 
-.prix {
-    position: relative;
-    display: flex;
-    margin-left: 300px;
-}
+
 
 .prix:hover {
     margin-left: 250px;
