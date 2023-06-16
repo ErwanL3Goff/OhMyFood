@@ -76,7 +76,7 @@ header {
     font-size: 2.1em;
     top: -60px;
     right: -615px;
-  }
+}
 
 .article__infos__jaime input {
     position: absolute;
@@ -229,10 +229,17 @@ footer {
 }
 
 .description {
-    display: inline;
-    margin-top: -16px;
+    position: relative;
     height: 44px;
     width: 44%;
+}
+
+.titremenu {
+    position: relative
+}
+
+.soustitre {
+    position: relative;
 }
 
 .prix {
@@ -317,6 +324,16 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
+    .article__infos__jaime {
+        position: relative;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        font-size: 1.2em;
+        top: -53px;
+        right: -290px;
+    }
+
     header {
         height: 63px;
         width: 375px;
@@ -359,18 +376,28 @@ footer {
         width: 274.787353515625px;
     }
 
-    .ok2 {
-        padding: 30px;
-        top: -80px;
+    .minicadre:hover .carte__plats__infos__checkbox {
+        width: 88px;
     }
-
-    .ok1 {
-        margin-left: 230px;
+    
+    .carte__plats__infos__checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #99e2d0;
+        width: 0%;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 0px 12px 12px 0px;
     }
 
     .titremenu {
+        position: relative;
         height: 21px;
-        width: 287px;
+        width: auto;
         top: -1.5px;
     }
 
@@ -379,7 +406,17 @@ footer {
     }
 
     .prix {
-        right: 300px;
+        width: 100px;
+        height: 68.07px;
+        position: relative;
+        display: flex;
+        margin-left: 20px;
+        background: hidden;
+        align-items: center;
+        border-radius: 15.043103218078613px;
+        padding: 12px 5px 12px 20px;
+        z-index: 11;
+        transition: transform 0.3s;
     }
 
     .bouton {
