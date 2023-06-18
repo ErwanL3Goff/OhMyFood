@@ -3,6 +3,7 @@ body {
     font-family: "Roboto", "Shrikhand", sans-serif, cursive;
     text-align: center;
     background: #f7f7f7;
+    margin: auto;
 }
 
 header {
