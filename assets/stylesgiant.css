@@ -41,7 +41,7 @@ header {
     position: relative;
     bottom: 1800px;
     width: 1055px;
-    height: 1600px;
+    height: 1550px;
     margin: auto;
     background: #F7F7F7;
     border-radius: 50px;
@@ -60,6 +60,15 @@ header {
     background: #FFFFFF;
 }
 
+.bouton {
+    padding: 13px 16px;
+    color: white;
+    background: linear-gradient(0deg, #9356dc -5.2%, #ff79da 110.74%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: none;
+    margin-left: 500px;
+}
 
 
 
@@ -67,9 +76,46 @@ header {
 
 
 
+
+.article__infos__jaime {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    font-size: 2.1em;
+    top: -60px;
+    right: -615px;
+}
+
+.article__infos__jaime input {
+    position: absolute;
+    z-index: 5;
+    height: 6vw;
+    width: 5vw;
+    opacity: 0;
+}
+
+.article__infos__jaime .fa-solid {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.4s, font-size 0.2s;
+    z-index: 1;
+    background: linear-gradient(to bottom, #9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.article__infos__jaime .fa-regular {
+    position: absolute;
+}
+
+.article__infos__jaime input[type=checkbox]:checked + .fa-solid {
+    opacity: 1;
+}
 
 .minicadre:hover .carte__plats__infos__checkbox {
-    width: 88px;
+    width: 130px;
 }
 
 .carte__plats__infos__checkbox {
@@ -84,6 +130,7 @@ header {
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 0px 12px 12px 0px;
+    margin-left: 220px;
 }
 
 .carte__plats__infos__checkbox input {
@@ -105,10 +152,15 @@ header {
 }
 
 
-.prix {
-    left: 45px;
-    margin-top: 25px;
-}
+
+
+
+
+
+
+
+
+
 
 
 footer {
@@ -151,7 +203,6 @@ footer {
 
 
 
-
 .ohmyfood {
     position: relative;
     display: flex;
@@ -185,15 +236,35 @@ footer {
 }
 
 .description {
-    margin-top: -16px;
+    left: 225px;
+    position: absolute;
     height: 44px;
-    width: 274.787353515625px;
+    width: 44%;
 }
 
+.titremenu {
+    position: relative
+}
 
+.soustitre {
+    position: relative;
+}
 
-.prix:hover {
-    margin-left: 250px;
+.prix {
+    width: 100px;
+    height: 68.07px;
+    position: relative;
+    display: flex;
+    left: 280px;
+    margin-left: 290px;
+    align-items: center;
+    border-radius: 15.043103218078613px;
+    padding: 12px 5px 12px 20px;
+    z-index: 11;
+}
+
+.minicadre:hover .prix {
+    left: 240px;
 }
 
 .textinbutton {
@@ -259,6 +330,16 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
+    .article__infos__jaime {
+        position: relative;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        font-size: 1.2em;
+        top: -53px;
+        right: -290px;
+    }
+
     header {
         height: 63px;
         width: 375px;
@@ -281,18 +362,17 @@ footer {
     }
 
     .cadre {
-        height: 1407px;
+        height: 1600px;
         width: 360px;
         top: 3px;
-        right: 45px;
+        left: -45px;
     }
 
     .minicadre {
-        height: 50px;
-        width: 300px;
+        width: 350px;
         top: 39px;
         border-radius: 15.043103218078613px;
-        margin-left: 11px;
+        margin-left: 5px;
     }
 
     .description {
@@ -300,29 +380,46 @@ footer {
         flex-direction: column;
         height: 40px;
         width: 274.787353515625px;
+        left: 30px;
     }
 
-    .ok1 {
+    .carte__plats__infos__checkbox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #99e2d0;
+        width: 0%;
         position: relative;
-        margin-left: 554px;
-        border-radius: 0px 15px 15px 0px;
-        background: none;
-        padding: 39px;
-        top: -90px;
-        z-index: 11;
+        overflow: hidden;
+        height: 100%;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        border-radius: 0px 12px 12px 0px;
+        margin-left: -55px;
+    }
+    
+    .carte__plats__infos__checkbox input {
+        z-index: 1;
+        position: absolute;
         opacity: 0;
+    }
+    
+    .carte__plats__infos__checkbox .fa-check {
+        border-radius: 50px;
+        background-color: #ffffff;
+        display: flex;
+        padding: 6px;
+        color: #99e2d0;
+    }
+    
+    .fa-solid {
         color: #FFFFFF;
     }
     
-    .ok1:hover {
-        opacity: 1;
-        background: #99E2D0;
-    }
-    
-
     .titremenu {
+        position: relative;
         height: 21px;
-        width: 287px;
+        width: auto;
         top: -1.5px;
     }
 
@@ -331,7 +428,11 @@ footer {
     }
 
     .prix {
-        right: 300px;
+        left: -10px;
+    }
+
+    .minicadre:hover .prix {
+        left: -60px;
     }
 
     .bouton {
@@ -349,7 +450,7 @@ footer {
         height: 300px;
         width: 375px;
         background: #353535;
-        top: 2.5px;
+        top: 20px;
     }
 
     .orderfooter {
