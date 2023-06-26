@@ -212,9 +212,9 @@ footer {
 
 .lapalettedegout {
     display: flex;
-    margin-left: 400px;
+    margin-left: 350px;
     height: 41px;
-    width: 261px;
+    width: 300px;
     font-family: 'Shrikhand';
     font-size: 28px;
     font-style: italic;
@@ -222,6 +222,9 @@ footer {
     line-height: 41px; 
 }
 
+.fa-heart {
+    margin-left: 10px;
+}
 
 .titre {
     height: 27px;
@@ -240,6 +243,7 @@ footer {
     position: absolute;
     height: 44px;
     width: 44%;
+    text-overflow: ellipsis;
 }
 
 .titremenu {
@@ -436,14 +440,31 @@ footer {
     }
 
     .bouton {
-        position: relative;
-        height: 50px;
-        width: 186px;
-        margin-left: 100px;
-        top: 50px;
-        border-radius: 25px;
-        background-color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-        padding: 30px;
+        padding: 13px 16px;
+        color: white;
+        background: linear-gradient(0deg, #9356dc -5.2%, #ff79da 110.74%);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 50px;
+        border: none;
+        text-decoration: none;
+        cursor: crosshair;
+    }
+
+    .lapalettedegout {
+        display: flex;
+        margin-left: 80px;
+        height: 41px;
+        width: 300px;
+        font-family: 'Shrikhand';
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 41px; 
+    }
+    
+    .fa-heart {
+        top: 7px;
+        margin-left: 5px;
     }
 
     footer {
@@ -472,18 +493,14 @@ footer {
 
     .lapalettedegout {
         display: flex;
-        margin-left: 70px;
+        margin-left: 80px;
         height: 41px;
-        width: 261px;
+        width: 300px;
         font-family: 'Shrikhand';
-        font-size: 28px;
+        font-size: 20px;
         font-style: italic;
         font-weight: 400;
         line-height: 41px; 
-    }
-
-    .icone {
-        margin-left: 280px;
     }
 
     .titre {
