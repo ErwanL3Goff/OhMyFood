@@ -1,4 +1,6 @@
 
+
+
 header {
     position: absolute;
     width: 100%;
@@ -161,7 +163,10 @@ header {
 
 
 
-
+.footersuperline {
+    font-family: "Shrikhand";
+    font-size: medium;
+}
 
 
 footer {
@@ -271,7 +276,8 @@ footer {
     padding: 12px 5px 12px 20px;
     transition: all 0.3s ease;
     z-index: 11;
-    margin-left: 120px;
+    margin-left: 160px;
+    margin-right: -50px;
 }
 
 .minicadre:hover .prix {
@@ -397,6 +403,7 @@ footer {
     }
 
     .minicadre:hover .description {
+        width: auto;
         text-overflow: ellipsis;
     }
 
@@ -416,7 +423,7 @@ footer {
         cursor: pointer;
         transition: all 0.3s ease;
         border-radius: 0px 12px 12px 0px;
-        margin-left: -340px;
+        margin-left: -290px;
     }
     
     .carte__plats__infos__checkbox input {
@@ -437,16 +444,20 @@ footer {
         top: -1.5px;
     }
 
+    .minicadre:hover .description {
+
+    }
+
     .soustitre {
         margin-top: -10px;
     }
 
     .prix {
-        left: -300px;
+        left: -280px;
     }
 
     .minicadre:hover .prix {
-        left: -350px;
+        left: -330px;
     }
 
     .bouton {
